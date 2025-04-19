@@ -65,7 +65,7 @@ with col2:
 
     elif use_demo:
         # Example demo DataFrame
-        demo_data_path = r"X:\Code_Projects\Streamlit\BW_EDA\Company Revenue Report 04.08.25 Nov 24.csv"
+        demo_data_path = "Company Revenue Report Demo.csv"
         df = pd.read_csv(demo_data_path)
         st.session_state.uploaded_df = df
         st.success("Demo file loaded!")
