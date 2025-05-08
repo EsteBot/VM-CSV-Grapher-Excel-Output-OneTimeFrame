@@ -517,5 +517,3 @@ with tab2:
                                     st.success("✅ Excel file downloaded!")
             else:
                 st.warning("⚠️ No valid columns found in the uploaded files to analyze (excluding 'CompanyName' and 'CompanyCode').")
-        else:
-            st.info("⬆️ Please upload at least two CSV files to proceed.")
