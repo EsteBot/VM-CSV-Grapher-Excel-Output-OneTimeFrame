@@ -100,7 +100,7 @@ with tab1:
             # Example demo DataFrame
             demo_data_path = 'Company Revenue Report Demo.csv'
             df = pd.read_csv(demo_data_path).reset_index(drop=True)
-            st.session_state.uploaded_df = df
+            st.session_state.uploaded_df_tab1 = df
             st.success("✅ Demo file loaded!")
 
         elif uploaded_file is not None:
@@ -121,7 +121,6 @@ with tab1:
             st.info("Using the uploaded file. Selecting the demo file will reset this option.")
 
         # --------- UI OPTIONS ---------
-        st.dataframe(st.session_state.uploaded_df)
         if st.session_state.uploaded_df_tab1 is not None:
             st.markdown("---")  # Just a divider line for UX
             st.subheader("🔍 Choose what to graph:")
