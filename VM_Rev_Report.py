@@ -98,7 +98,7 @@ with tab1:
 
             # Load demo file
             # Example demo DataFrame
-            demo_data_path = "Company Revenue Report Demo.csv"
+            demo_data_path = 'Company Revenue Report Demo.csv'
             df = pd.read_csv(demo_data_path).reset_index(drop=True)
             st.session_state.uploaded_df = df
             st.success("✅ Demo file loaded!")
